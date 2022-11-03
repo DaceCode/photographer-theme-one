@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Deo - Photographer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">John Deo</a>
+        <a href="javascript:void(0)" class="navbar-toggler" id="navbartoggler"
+          >kadel</a
+        >
+      </div>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav" id="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="work-gallery">
+      <div class="content">
+        <div class="grid-wrapper">
+          <div class="grid-item">
+            <a href="./work-one.html" class="work-card">
+              <div class="work-image">
+                <img src="https://picsum.photos/400/300" alt="work one image" />
+              </div>
+              <div class="work-text">
+                <h3 class="work-title">Lorem & Ipsum's Wedding</h3>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="./work-two.html" class="work-card">
+              <div class="work-image">
+                <img src="https://picsum.photos/400/300" alt="work two image" />
+              </div>
+              <div class="work-text">
+                <h3 class="work-title">John & Jane's Wedding</h3>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="./work-three.html" class="work-card">
+              <div class="work-image">
+                <img src="https://picsum.photos/400/300" alt="work two image" />
+              </div>
+              <div class="work-text">
+                <h3 class="work-title">John & Jane's Wedding</h3>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="./work-four.html" class="work-card">
+              <div class="work-image">
+                <img src="https://picsum.photos/400/300" alt="work two image" />
+              </div>
+              <div class="work-text">
+                <h3 class="work-title">John & Jane's Wedding</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h1>
+          John Doe is a photographer and art director based in Mumbai, India.
+          She shoots a diverse range of subjects for commercial and editorial
+          clients, all with a clean and elegant aesthetic.
+        </h1>
+        <a href="./contact.html" class="contact-link">Let’s work together.</a>
+        <!-- <div class="grid-wrapper">
+          <div class="grid-item">
+            <h2>Email</h2>
+            <p>john.doe@example.com</p>
+          </div>
+          <div class="grid-item">
+            <h2>Email</h2>
+            <p>john.doe@example.com</p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="assets/images/twitter.svg" alt="twitter logo"
+            /></a>
+          </li>
+          <li class="social">
+            <a href="#"
+              ><img src="assets/images/instagram.svg" alt="instagram logo"
+            /></a>
+          </li>
+        </ul>
+        <ul class="contact">
+          <li>(555) 555-5555</li>
+          <li>email@example.com</li>
+        </ul>
+        <!-- <hr /> -->
+      </div>
+      <p>© John Doe 2022</p>
+    </footer>
+    <script>
+      let navtoggler = document.getElementById('navbartoggler');
+      let navfind = document.getElementById('navbar-nav');
+      navtoggler.addEventListener('click', togglenav);
+      console.log(navfind.className);
+      function togglenav() {
+        if (navfind.className === 'navbar-nav') {
+          console.log('hello');
+          navfind.className += ' responsive';
+          console.log('added responsive class');
+        } else {
+          console.log('hello from else');
+          navfind.className = 'navbar-nav';
+          console.log('removed responsive class');
+        }
+      }
+    </script>
+  </body>
+</html>
